@@ -1,9 +1,10 @@
-# Fuzz testing;
+# Fuzz testing
 
 ### Purpose
 make able to test input in the most "automatic way as possible"
 
 ### set-up
+
 ```
 set disassembly-flavor intel
 echo ------------------------------
@@ -15,7 +16,8 @@ echo ------------------------------
 ```
 setting intel flavor, running sample.bin (mutated asdf file), print out some disassembly info for later debugging.
 
-gdb params
+### gdb params
+
 ```
     "gdb", "--batch",  "--return-child-result", "-x", "fuzz.gdb"
 ```
